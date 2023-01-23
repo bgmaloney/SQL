@@ -1,4 +1,4 @@
---Create a clothing store database
+--Create a clothing store database--
 
 
 CREATE TABLE clothes (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, colour TEXT, price INTEGER, aisle INTEGER);
@@ -19,9 +19,9 @@ INSERT INTO clothes VALUES (13, "boots", 2,"white", 69.99, 3);
 INSERT INTO clothes VALUES (14, "hats", 4, "brown", 19.99, 4);
 INSERT INTO clothes VALUES (15, "bags", 3, "black", 24.99, 4);
 
---Display the database order by price.
+--Display the database order by price.--
 SELECT * FROM clothes 
 ORDER BY price desc;
 
---How many articles of clothing in the store?
+--How many articles of clothing in the store?--
 SELECT SUM (QUANTITY) FROM clothes; 
